@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kalaiselvi</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kalaiseivi K. - Social Media Specialist</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        /* Global Styles */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        
+
+        :root {
+
+            --primary: #4361ee;
+
+            --secondary: #3a0ca3;
+
+            --accent: #f72585;
+
+            --light: #f8f9fa;
+
+            --dark: #212529;
+
+            --gray: #6c757d;
+
+            --success: #4cc9f0;
+
+        }
+
+        
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        
+
+        body {
+
+            line-height: 1.6;
+
+            color: var(--dark);
+
+            background-color: #f9fafb;
+
+        }
+
+        
+
+        .container {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 15px;
+
+        }
+
+        
+
+        section {
+
+            padding: 80px 0;
+
+        }
+
+        
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 50px;
+
+            font-size: 2.5rem;
+
+            color: var(--secondary);
+
+            position: relative;
+
+        }
+
+        
+
+        .section-title::after {
+
+            content: '';
+
+            position: absolute;
+
+            bottom: -10px;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 80px;
+
+            height: 4px;
+
+            background: var(--accent);
+
+            border-radius: 2px;
+
+        }
+
+        
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 12px 30px;
+
+            background: var(--primary);
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 30px;
+
+            font-weight: 600;
+
+            transition: all 0.3s ease;
+
+            border: none;
+
+            cursor: pointer;
+
+        }
+
+        
+
+        .btn:hover {
+
+            background: var(--secondary);
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        /* Header & Navigation */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 15px 0;
+
+        }
+
+        
+
+        nav {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        
+
+        .logo {
+
+            font-size: 1.8rem;
+
+            font-weight: 700;
+
+            color: var(--primary);
+
+        }
+
+        
+
+        .nav-links {
+
+            display: flex;
+
+            list-style: none;
+
+        }
+
+        
+
+        .nav-links li {
+
+            margin-left: 30px;
+
+        }
+
+        
+
+        .nav-links a {
+
+            text-decoration: none;
+
+            color: var(--dark);
+
+            font-weight: 500;
+
+            transition: color 0.3s ease;
+
+        }
+
+        
+
+        .nav-links a:hover {
+
+            color: var(--primary);
+
+        }
+
+        
+
+        .menu-btn {
+
+            display: none;
+
+            font-size: 1.5rem;
+
+            cursor: pointer;
+
+        }
+
+        
+
+        /* Hero Section */
+
+        .hero {
+
+            padding-top: 150px;
+
+            padding-bottom: 100px;
+
+            text-align: center;
+
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+        }
+
+        
+
+        .hero h1 {
+
+            font-size: 3.5rem;
+
+            margin-bottom: 20px;
+
+            color: var(--secondary);
+
+        }
+
+        
+
+        .hero p {
+
+            font-size: 1.5rem;
+
+            color: var(--gray);
+
+            max-width: 700px;
+
+            margin: 0 auto 30px;
+
+        }
+
+        
+
+        /* About Section */
+
+        .about-content {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 50px;
+
+        }
+
+        
+
+        .about-text {
+
+            flex: 1;
+
+        }
+
+        
+
+        .about-img {
+
+            flex: 1;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .about-img img {
+
+            width: 100%;
+
+            height: auto;
+
+            display: block;
+
+        }
+
+        
+
+        /* Work Section */
+
+        .work-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 30px;
+
+        }
+
+        
+
+        .work-card {
+
+            background: white;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        
+
+        .work-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .work-img {
+
+            height: 200px;
+
+            overflow: hidden;
+
+        }
+
+        
+
+        .work-img img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: transform 0.5s ease;
+
+        }
+
+        
+
+        .work-card:hover .work-img img {
+
+            transform: scale(1.1);
+
+        }
+
+        
+
+        .work-info {
+
+            padding: 20px;
+
+        }
+
+        
+
+        .work-info h3 {
+
+            margin-bottom: 10px;
+
+            color: var(--secondary);
+
+        }
+
+        
+
+        /* Impact Section */
+
+        .impact-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 30px;
+
+            text-align: center;
+
+        }
+
+        
+
+        .impact-item {
+
+            background: white;
+
+            padding: 30px 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+        }
+
+        
+
+        .impact-number {
+
+            font-size: 3rem;
+
+            font-weight: 700;
+
+            color: var(--primary);
+
+            margin-bottom: 10px;
+
+        }
+
+        
+
+        /* Testimonials Section */
+
+        .testimonials-container {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+        
+
+        .testimonial {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+            margin-bottom: 30px;
+
+        }
+
+        
+
+        .testimonial-text {
+
+            font-style: italic;
+
+            margin-bottom: 20px;
+
+            position: relative;
+
+            padding-left: 30px;
+
+        }
+
+        
+
+        .testimonial-text::before {
+
+            content: """;
+
+            position: absolute;
+
+            left: 0;
+
+            top: -20px;
+
+            font-size: 4rem;
+
+            color: var(--primary);
+
+            opacity: 0.2;
+
+        }
+
+        
+
+        .testimonial-author {
+
+            font-weight: 600;
+
+            color: var(--secondary);
+
+        }
+
+        
+
+        .testimonial-role {
+
+            color: var(--gray);
+
+            font-size: 0.9rem;
+
+        }
+
+        
+
+        /* Contact Section */
+
+        .contact-form {
+
+            max-width: 600px;
+
+            margin: 0 auto;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+        }
+
+        
+
+        .form-group {
+
+            margin-bottom: 20px;
+
+        }
+
+        
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-weight: 500;
+
+        }
+
+        
+
+        .form-group input,
+
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 12px 15px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            font-size: 1rem;
+
+        }
+
+        
+
+        .form-group textarea {
+
+            min-height: 150px;
+
+            resize: vertical;
+
+        }
+
+        
+
+        /* Footer */
+
+        footer {
+
+            background: var(--dark);
+
+            color: white;
+
+            padding: 40px 0;
+
+            text-align: center;
+
+        }
+
+        
+
+        .social-links {
+
+            margin-bottom: 20px;
+
+        }
+
+        
+
+        .social-links a {
+
+            color: white;
+
+            font-size: 1.5rem;
+
+            margin: 0 10px;
+
+            transition: color 0.3s ease;
+
+        }
+
+        
+
+        .social-links a:hover {
+
+            color: var(--accent);
+
+        }
+
+        
+
+        /* Responsive Design */
+
+        @media (max-width: 992px) {
+
+            .about-content {
+
+                flex-direction: column;
+
+            }
+
+            
+
+            .hero h1 {
+
+                font-size: 2.8rem;
+
+            }
+
+        }
+
+        
+
+        @media (max-width: 768px) {
+
+            .menu-btn {
+
+                display: block;
+
+            }
+
+            
+
+            .nav-links {
+
+                position: fixed;
+
+                top: 80px;
+
+                left: -100%;
+
+                width: 100%;
+
+                height: calc(100vh - 80px);
+
+                background: white;
+
+                flex-direction: column;
+
+                align-items: center;
+
+                justify-content: center;
+
+                transition: left 0.3s ease;
+
+            }
+
+            
+
+            .nav-links.active {
+
+                left: 0;
+
+            }
+
+            
+
+            .nav-links li {
+
+                margin: 15px 0;
+
+            }
+
+            
+
+            .hero h1 {
+
+                font-size: 2.3rem;
+
+            }
+
+            
+
+            .hero p {
+
+                font-size: 1.2rem;
+
+            }
+
+            
+
+            .section-title {
+
+                font-size: 2rem;
+
+            }
+
+        }
+
+        
+
+        @media (max-width: 576px) {
+
+            .hero {
+
+                padding-top: 120px;
+
+                padding-bottom: 80px;
+
+            }
+
+            
+
+            .hero h1 {
+
+                font-size: 2rem;
+
+            }
+
+            
+
+            section {
+
+                padding: 60px 0;
+
+            }
+
+            
+
+            .impact-number {
+
+                font-size: 2.5rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <div class="logo">
+                  <i class="fas fa-brain"></i>
+                  <span>KALAISELVI.K</span>
+                </div>
+              
+
+                <ul class="nav-links">
+                  
+                
+                  
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#work">Work</a></li>
+
+                    <li><a href="#impact">Impact</a></li>
+
+                    <li><a href="#testimonials">Testimonials</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+                <div class="menu-btn">
+
+                    <i class="fas fa-bars"></i>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Social Media Specialist & Contact Center</h1>
+
+            <p>Creating engaging content and growing online communities through data-driven strategies</p>
+
+            <a href="#contact" class="btn">Get In Touch</a>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>I'm Kalaiseivi, a social media specialist with over 1 year of experience creating engaging content and growing online communities. I specialize in visual storytelling and data-driven strategy.</p>
+
+                    <p>My passion includes working with brands to connect with their audience through innovative and creative social media campaigns. I believe in the power of social media to build strong relationships between brands and their customers.</p>
+
+                </div>
+
+                <div class="about-img">
+
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Kalaiseivi working">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Work Section -->
+
+    <section id="work" style="background-color: #f1f5f9;">
+
+        <div class="container">
+
+            <h2 class="section-title">My Work</h2>
+
+            <div class="work-grid">
+
+                <div class="work-card">
+
+                    <div class="work-img">
+
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="Instagram Campaign">
+
+                    </div>
+
+                    <div class="work-info">
+
+                        <h3>Instagram Campaign</h3>
+
+                        <p>Brand awareness campaign with 50% engagement boost through strategic content planning and influencer partnerships.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="work-card">
+
+                    <div class="work-img">
+
+                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="TikTok Stories">
+
+                    </div>
+
+                    <div class="work-info">
+
+                        <h3>TikTok Stories</h3>
+
+                        <p>Series of engaging stories that attracted 25+ high-profile collaborators and increased brand visibility among younger demographics.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="work-card">
+
+                    <div class="work-img">
+
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Analytics Overhaul">
+
+                    </div>
+
+                    <div class="work-info">
+
+                        <h3>Analytics Overhaul</h3>
+
+                        <p>Improved ROI tracking for e-commerce clients by implementing advanced analytics and data visualization dashboards.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Impact Section -->
+
+    <section id="impact">
+
+        <div class="container">
+
+            <h2 class="section-title">My Impact</h2>
+
+            <div class="impact-grid">
+
+                <div class="impact-item">
+
+                    <div class="impact-number">250K+</div>
+
+                    <p>Followers Gained</p>
+
+                </div>
+
+                <div class="impact-item">
+
+                    <div class="impact-number">75%</div>
+
+                    <p>Engagement Success</p>
+
+                </div>
+
+                <div class="impact-item">
+
+                    <div class="impact-number">120%</div>
+
+                    <p>ROI Increase</p>
+
+                </div>
+
+                <div class="impact-item">
+
+                    <div class="impact-number">15M+</div>
+
+                    <p>Total Reach</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" style="background-color: #f1f5f9;">
+
+        <div class="container">
+
+            <h2 class="section-title">Client Testimonials</h2>
+
+            <div class="testimonials-container">
+
+                <div class="testimonial">
+
+                    <p class="testimonial-text">Kalaiseivi transformed our social media presence. Our engagement increased by 75% in just three months, and we saw a significant boost in online sales across all platforms.</p>
+
+                    <div class="testimonial-author">New Witness</div>
+
+                    <div class="testimonial-role">Marketing Director, Innovate Inc</div>
+
+                </div>
+
+                <div class="testimonial">
+
+                    <p class="testimonial-text">The campaigns Kalaiseivi created for us went viral and resulted in our highest sales month ever. Their understanding of platform algorithms and trends is impressive.</p>
+
+                    <div class="testimonial-author">Mutual Clim</div>
+
+                    <div class="testimonial-role">Founder, Styleflow</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">Get In Touch</h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">Your Name</label>
+
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">Your Email</label>
+
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">Your Message</label>
+
+                    <textarea id="message" placeholder="How can I help you?" required></textarea>
+
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="social-links">
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+            </div>
+
+            <p>&copy; 2023 Kalaiseivi K. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        // Mobile Menu Toggle
+
+        const menuBtn = document.querySelector('.menu-btn');
+
+        const navLinks = document.querySelector('.nav-links');
+
+        
+
+        menuBtn.addEventListener('click', () => {
+
+            navLinks.classList.toggle('active');
+
+        });
+
+        
+
+        // Form Validation
+
+        const contactForm = document.getElementById('contactForm');
+
+        
+
+        contactForm.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+
+            
+
+            const name = document.getElementById('name').value;
+
+            const email = document.getElementById('email').value;
+
+            const message = document.getElementById('message').value;
+
+            
+
+            if (name && email && message) {
+
+                alert('Thank you for your message! I will get back to you soon.');
+
+                contactForm.reset();
+
+            } else {
+
+                alert('Please fill in all fields.');
+
+            }
+
+        });
+
+        
+
+        // Smooth Scrolling for Navigation Links
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                
+
+                const targetId = this.getAttribute('href');
+
+                if (targetId === '#') return;
+
+                
+
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+
+                    window.scrollTo({
+
+                        top: targetElement.offsetTop - 80,
+
+                        behavior: 'smooth'
+
+                    });
+
+                    
+
+                    // Close mobile menu if open
+
+                    if (navLinks.classList.contains('active')) {
+
+                        navLinks.classList.remove('active');
+
+                    }
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
